@@ -1,5 +1,5 @@
 import React from "react";
-import { data as projects } from "../helpers/data";
+import { data as projects } from "../../helpers/data";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
         <div key={i}>
           <span class="day">Day {String(i + 1).padStart(2, "0")}</span>
           <img
-            src={require(`./assets/images/${el.img}`).default}
+            src={require(`../../assets/images/${el.img}`).default}
             alt="expanding-cards"
           />
           <div class="content">
