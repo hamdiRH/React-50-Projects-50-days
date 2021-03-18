@@ -14,16 +14,7 @@ const Home = () => {
           />
           <div class="content">
             <h4>{el.name}</h4>
-            <Link
-              href="./Expanding Cards/"
-              target="_blank"
-              rel="noreferrer"
-              class="btn btn-primary"
-              onClick={(event) => {
-                event.preventDefault();
-                window.open(this.makeHref("route"));
-              }}
-            >
+            <Link to={el.link} class="btn btn-primary">
               Live Demo
             </Link>
           </div>

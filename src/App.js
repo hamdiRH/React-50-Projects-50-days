@@ -11,9 +11,9 @@ const App = () => {
         <Route path="/" exact component={Home} />
         {data.map((el) => (
           <Route
-            path={`/${el.folder}`}
+            path={el.link}
             exact
-            component={require(`./containers/${el.folder}`)}
+            component={require(`./containers/${el.folder}`).default}
           />
         ))}
       </Switch>
