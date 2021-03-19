@@ -11,4 +11,18 @@ export const data = [
     name: "Progress Steps",
     folder: "ProgressSteps",
   },
+  {
+    img: "3-rotating-navigation-animation.png",
+    link: "/RotatingNavigationAnimation",
+    name: "Rotating Navigation Animation",
+    folder: "RotatingNavigationAnimation",
+  },
+  {
+    img: "4-hidden-search-widget.png",
+    link: "/HiddenSearchWidget",
+    name: "Hidden Search Widget",
+    folder: "HiddenSearchWidget",
+  },
+  
+  
 ];
