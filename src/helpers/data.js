@@ -23,6 +23,10 @@ export const data = [
     name: "Hidden Search Widget",
     folder: "HiddenSearchWidget",
   },
-  
-  
+  {
+    img: "5-blurry-loading.png",
+    link: "/BlurryLoading",
+    name: "Blurry Loading",
+    folder: "BlurryLoading",
+  },
 ];
