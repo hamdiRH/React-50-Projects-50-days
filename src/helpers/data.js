@@ -41,5 +41,10 @@ export const data = [
     name: "Split Landing Page",
     folder: "SplitLandingPage",
   },
-  
+  {
+    img: "8-form-wave.png",
+    link: "/Form Wave",
+    name: "FormWave",
+    folder: "FormWave",
+  },
 ];
