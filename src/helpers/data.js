@@ -29,4 +29,17 @@ export const data = [
     name: "Blurry Loading",
     folder: "BlurryLoading",
   },
+  // {
+  //   img: "6-scroll-animation.png",
+  //   link: "/ScrollAnimation",
+  //   name: "ScrollAnimation",
+  //   folder: "ScrollAnimation",
+  // },
+  {
+    img: "7-split-landing-page.png",
+    link: "/SplitLandingPage",
+    name: "Split Landing Page",
+    folder: "SplitLandingPage",
+  },
+  
 ];
