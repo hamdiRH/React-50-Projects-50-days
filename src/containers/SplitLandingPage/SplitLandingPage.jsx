@@ -4,15 +4,6 @@ const SplitLandingPage = () => {
   const [classList, setclassList] = useState("container");
   const left = () => setclassList("container hover-left");
   const right = () => setclassList("container hover-right");
-  // const left = document.querySelector('.left')
-  // const right = document.querySelector('.right')
-  // const container = document.querySelector('.container')
-
-  // left.addEventListener('mouseenter', () => container.classList.add('hover-left'))
-  // left.addEventListener('mouseleave', () => container.classList.remove('hover-left'))
-
-  // right.addEventListener('mouseenter', () => container.classList.add('hover-right'))
-  // right.addEventListener('mouseleave', () => container.classList.remove('hover-right'))
   return (
     <div className="split-landing-page">
       <div class={classList}>

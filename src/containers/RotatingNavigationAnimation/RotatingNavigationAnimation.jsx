@@ -4,19 +4,19 @@ const RotatingNavigationAnimation = () => {
   const [classList, setclassList] = useState("container");
   return (
     <div className="rotating-navigation-animation">
-      <div class={classList}>
-        <div class="circle-container">
-          <div class="circle">
+      <div className={classList}>
+        <div className="circle-container">
+          <div className="circle">
             <button id="close" onClick={()=>setclassList('container')}>
-              <i class="fas fa-times"></i>
+              <i className="fas fa-times"></i>
             </button>
             <button id="open" onClick={()=>setclassList('container show-nav')}>
-              <i class="fas fa-bars"></i>
+              <i className="fas fa-bars"></i>
             </button>
           </div>
         </div>
 
-        <div class="content">
+        <div className="content">
           <h1>Amazing Article</h1>
           <small>Florin Pop</small>
           <p>
@@ -54,13 +54,13 @@ const RotatingNavigationAnimation = () => {
       <nav>
         <ul>
           <li>
-            <i class="fas fa-home"></i> Home
+            <i className="fas fa-home"></i> Home
           </li>
           <li>
-            <i class="fas fa-user-alt"></i> About
+            <i className="fas fa-user-alt"></i> About
           </li>
           <li>
-            <i class="fas fa-envelope"></i> Contact
+            <i className="fas fa-envelope"></i> Contact
           </li>
         </ul>
       </nav>

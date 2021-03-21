@@ -47,4 +47,11 @@ export const data = [
     name: "FormWave",
     folder: "FormWave",
   },
+  {
+    img: "9-sound-board.png",
+    link: "/SoundBoard",
+    name: "SoundBoard",
+    folder: "SoundBoard",
+  },
+  
 ];
