@@ -29,12 +29,12 @@ export const data = [
     name: "Blurry Loading",
     folder: "BlurryLoading",
   },
-  // {
-  //   img: "6-scroll-animation.png",
-  //   link: "/ScrollAnimation",
-  //   name: "ScrollAnimation",
-  //   folder: "ScrollAnimation",
-  // },
+  {
+    img: "6-fb-reactions-animation.png",
+    link: "/fb-reactions-animation",
+    name: "Fb Reactions Animation",
+    folder: "FbReactionsAnimation",
+  },
   {
     img: "7-split-landing-page.png",
     link: "/SplitLandingPage",
@@ -44,14 +44,13 @@ export const data = [
   {
     img: "8-form-wave.png",
     link: "/Form Wave",
-    name: "FormWave",
+    name: "Form Wave",
     folder: "FormWave",
   },
   {
     img: "9-sound-board.png",
     link: "/SoundBoard",
-    name: "SoundBoard",
+    name: "Sound Board",
     folder: "SoundBoard",
   },
-  
 ];
