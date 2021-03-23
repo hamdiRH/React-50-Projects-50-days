@@ -53,4 +53,11 @@ export const data = [
     name: "Sound Board",
     folder: "SoundBoard",
   },
+  {
+    img: "15-incrementing-counter.png",
+    link: "/IncrementingCounter",
+    name: "Incrementing Counter",
+    folder: "IncrementingCounter",
+  },
+  
 ];

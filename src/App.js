@@ -11,6 +11,7 @@ const App = () => {
         <Route path="/" exact component={Home} />
         {data.map((el) => (
           <Route
+            key={Math.random()}
             path={el.link}
             exact
             component={require(`./containers/${el.folder}`).default}
