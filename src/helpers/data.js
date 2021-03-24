@@ -59,5 +59,11 @@ export const data = [
     name: "Incrementing Counter",
     folder: "IncrementingCounter",
   },
+  {
+    img: "Untitled.png",
+    link: "/I18",
+    name: "I18",
+    folder: "I18",
+  },
   
 ];
