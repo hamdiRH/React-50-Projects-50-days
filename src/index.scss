@@ -5,7 +5,11 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
+
 :root {
+  --primary-color: #000;
+  --secondary-color: #fff;
   --line-border-fill: #3498db;
   --line-border-empty: #e0e0e0;
   --left-bg-color: rgba(87, 84, 236, 0.7);
