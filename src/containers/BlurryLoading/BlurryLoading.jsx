@@ -17,10 +17,10 @@ const BlurryLoading = () => {
   return (
     <div className="blurry-loading">
       <section
-        class="bg"
+        className="bg"
         style={{ filter: `blur(${scale(load, 0, 100, 30, 0)}px)` }}
       ></section>
-      <div class="loading-text" style={{ opacity: scale(load, 0, 100, 1, 0) }}>
+      <div className="loading-text" style={{ opacity: scale(load, 0, 100, 1, 0) }}>
         {load}%
       </div>
     </div>

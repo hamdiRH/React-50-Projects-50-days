@@ -22,25 +22,25 @@ const IncrementingCounter = () => {
 
   return (
     <div className="incrementing-counter">
-      <div class="counter-container">
-        <i class="fab fa-twitter fa-3x"></i>
-        <div class="counter" data-target="12000" ref={refCounter1}>
+      <div className="counter-container">
+        <i className="fab fa-twitter fa-3x"></i>
+        <div className="counter" data-target="12000" ref={refCounter1}>
           {counter1}
         </div>
         <span>Twitter Followers</span>
       </div>
 
-      <div class="counter-container">
-        <i class="fab fa-youtube fa-3x"></i>
-        <div class="counter" data-target="5000" ref={refCounter2}>
+      <div className="counter-container">
+        <i className="fab fa-youtube fa-3x"></i>
+        <div className="counter" data-target="5000" ref={refCounter2}>
           {counter2}
         </div>
         <span>YouTube Subscribers</span>
       </div>
 
-      <div class="counter-container">
-        <i class="fab fa-facebook fa-3x"></i>
-        <div class="counter" data-target="7500" ref={refCounter3}>
+      <div className="counter-container">
+        <i className="fab fa-facebook fa-3x"></i>
+        <div className="counter" data-target="7500" ref={refCounter3}>
           {counter3}
         </div>
         <span>Facebook Fans</span>

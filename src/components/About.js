@@ -3,9 +3,9 @@ import htmlCssJs from "../assets/html-css-js.png";
 
 const About = () => {
   return (
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about-a">
+    <section className="about" id="about">
+      <div className="container">
+        <div className="about-a">
           <div>
             <h2>About The Course</h2>
             <p>
@@ -22,17 +22,17 @@ const About = () => {
           </div>
 
           <a
-            class="repo"
+            className="repo"
             href="https://github.com/hamdiRH/50-Projects-In-50-Days---HTML-CSS-JS"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-github fa-4x" aria-hidden="true"></i>
+            <i className="fab fa-github fa-4x" aria-hidden="true"></i>
             <p>Github Repo For All Projects</p>
           </a>
         </div>
 
-        <div class="about-b">
+        <div className="about-b">
           <h2>What You Should Know</h2>
           <p>
             A very basic understanding of HTML, CSS, JavaScript &amp; React is

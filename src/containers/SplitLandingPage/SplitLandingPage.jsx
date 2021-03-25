@@ -6,16 +6,16 @@ const SplitLandingPage = () => {
   const right = () => setclassList("container hover-right");
   return (
     <div className="split-landing-page">
-      <div class={classList}>
-        <div class="split left" onMouseLeave={left} onMouseEnter={left}>
+      <div className={classList}>
+        <div className="split left" onMouseLeave={left} onMouseEnter={left}>
           <h1>Playstation 5</h1>
-          <Link to="/" class="btn">
+          <Link to="/" className="btn">
             Buy Now
           </Link>
         </div>
-        <div class="split right" onMouseLeave={right} onMouseEnter={right}>
+        <div className="split right" onMouseLeave={right} onMouseEnter={right}>
           <h1>XBox Series X</h1>
-          <Link to="/" class="btn">
+          <Link to="/" className="btn">
             Buy Now
           </Link>
         </div>

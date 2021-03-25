@@ -65,7 +65,7 @@ const ThemeClock = () => {
       `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
     );
     setdateEl(
-      `${days[day]}, ${months[month]} <span class="circle">${date}</span>`
+      `${days[day]}, ${months[month]} <span className="circle">${date}</span>`
     );
   };
 

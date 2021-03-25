@@ -3,10 +3,10 @@ import React from "react";
 const FormWave = () => {
   return (
     <div className="form-wave">
-      <div class="container">
+      <div className="container">
         <h1>Please Login</h1>
         <form>
-          <div class="form-control">
+          <div className="form-control">
             <input type="text" required />
             {/* <label>Email</label> */}
             <label>
@@ -16,7 +16,7 @@ const FormWave = () => {
             </label>
           </div>
 
-          <div class="form-control">
+          <div className="form-control">
             <input type="password" required />
             <label>
               {[..."Password"].map((el, i) => (
@@ -25,11 +25,11 @@ const FormWave = () => {
             </label>
           </div>
 
-          <button class="btn" style={{ color: "black" }}>
+          <button className="btn" style={{ color: "black" }}>
             Login
           </button>
 
-          <p class="text">
+          <p className="text">
             Don't have an account? <a href="#">Register</a>{" "}
           </p>
         </form>
