@@ -60,10 +60,16 @@ export const data = [
     folder: "IncrementingCounter",
   },
   {
-    img: "Untitled.png",
+    img: "16-i18.png",
     link: "/I18",
     name: "I18",
     folder: "I18",
+  },
+  {
+    img: "18-background-slider.png",
+    link: "/BackgroundSlider",
+    name: "Background Slider",
+    folder: "BackgroundSlider",
   },
   
 ];
