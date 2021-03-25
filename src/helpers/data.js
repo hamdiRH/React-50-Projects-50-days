@@ -71,5 +71,11 @@ export const data = [
     name: "Background Slider",
     folder: "BackgroundSlider",
   },
+  {
+    img: "19-theme-clock.png",
+    link: "/ThemeClock",
+    name: "Theme Clock",
+    folder: "ThemeClock",
+  },
   
 ];
