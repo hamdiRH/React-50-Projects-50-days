@@ -77,5 +77,11 @@ export const data = [
     name: "Theme Clock",
     folder: "ThemeClock",
   },
+  {
+    img: "45-netflix-mobile-navigation.png",
+    link: "/NetflixMobileNavigation",
+    name: "Netflix Mobile Navigation",
+    folder: "NetflixMobileNavigation",
+  },
   
 ];
