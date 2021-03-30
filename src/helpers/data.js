@@ -83,5 +83,12 @@ export const data = [
     name: "Netflix Mobile Navigation",
     folder: "NetflixMobileNavigation",
   },
+  {
+    img: "41-verify-account-ui.png",
+    link: "/VerifyAccountUi",
+    name: "Verify Account Ui",
+    folder: "VerifyAccountUi",
+  },
+  
   
 ];
