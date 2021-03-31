@@ -89,6 +89,11 @@ export const data = [
     name: "Verify Account Ui",
     folder: "VerifyAccountUi",
   },
-  
+  {
+    img: "26-double-vertical-slider.png",
+    link: "/double-vertical-slider",
+    name: "DoubleVerticalSlider",
+    folder: "DoubleVerticalSlider",
+  },
   
 ];
