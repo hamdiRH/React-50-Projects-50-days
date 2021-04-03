@@ -4,10 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
-@import url('https://fonts.googleapis.com/css?family=Muli:300,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Heebo:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
@@ -332,4 +332,71 @@ h2 {
 .about-d,
 .about-e {
   margin: 3rem 0;
+}
+
+.signature {
+  background: url("./assets/IMG_3142.jpg") no-repeat center / contain;
+  outline: none;
+  border: solid;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  /* color: rgb(139, 0, 0);
+  background-color: rgb(139, 0, 0); */
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  animation: rotation 20s infinite linear;
+  @keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+}
+
+.back {
+  // background: url("./assets/IMG_3142.jpg") no-repeat center / contain;
+  outline: none;
+  border: solid;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  /* color: rgb(139, 0, 0);
+  background-color: rgb(139, 0, 0); */
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  animation: rotation 20s infinite linear;
+  @keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+  i{
+    font-size: 50px;
+  }
 }

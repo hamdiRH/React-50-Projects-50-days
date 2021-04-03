@@ -12,7 +12,7 @@
   overflow-x: hidden;
   margin: 0;
 
-  .container {
+  &__container {
     background-color: #fafafa;
     transform-origin: top left;
     transition: transform 0.5s linear;
@@ -23,7 +23,7 @@
     position: relative;
   }
 
-  .container.show-nav {
+  &__container.show-nav {
     transform: rotate(-20deg);
     position: relative;
   }
@@ -43,7 +43,7 @@
     transition: transform 0.5s linear;
   }
 
-  .container.show-nav .circle {
+  &__container.show-nav .circle {
     transform: rotate(-70deg);
   }
 
@@ -73,7 +73,7 @@
     transform-origin: top left;
   }
 
-  .container.show-nav + nav li {
+  &__container.show-nav + nav li {
     transform: translateX(0);
     transition-delay: 0.3s;
   }

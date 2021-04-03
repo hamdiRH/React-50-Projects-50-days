@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
 const RotatingNavigationAnimation = () => {
-  const [classList, setclassList] = useState("container");
+  const [classList, setclassList] = useState("rotating-navigation-animation__container");
   return (
     <div className="rotating-navigation-animation">
       <div className={classList}>
         <div className="circle-container">
           <div className="circle">
-            <button id="close" onClick={()=>setclassList('container')}>
+            <button id="close" onClick={()=>setclassList('rotating-navigation-animation__container')}>
               <i className="fas fa-times"></i>
             </button>
-            <button id="open" onClick={()=>setclassList('container show-nav')}>
+            <button id="open" onClick={()=>setclassList('rotating-navigation-animation__container show-nav')}>
               <i className="fas fa-bars"></i>
             </button>
           </div>

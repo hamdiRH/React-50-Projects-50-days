@@ -1,14 +1,22 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Home from "./containers/Home";
 import { data } from "./helpers/data";
 
 const App = () => {
   return (
-    <Layout>
+    <>
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route
+          path="/"
+          exact
+          render={() => (
+            <Layout>
+              <Home />
+            </Layout>
+          )}
+        />
         {data.map((el) => (
           <Route
             key={Math.random()}
@@ -18,7 +26,7 @@ const App = () => {
           />
         ))}
       </Switch>
-    </Layout>
+    </>
   );
 };
 
