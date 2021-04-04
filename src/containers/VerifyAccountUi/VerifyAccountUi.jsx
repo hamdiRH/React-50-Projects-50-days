@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+import { Link } from "react-router-dom";
 const VerifyAccountUi = () => {
   const input1 = useRef();
   const input2 = useRef();
@@ -10,7 +10,7 @@ const VerifyAccountUi = () => {
 
   const handleKeyDown = (e, i) => {
     if (e.key >= 0 && e.key <= 9) {
-    //   eval(`input${i}`).current.value = "";
+      //   eval(`input${i}`).current.value = "";
       if (i === 6) {
         alert(
           input1.current.value +
@@ -29,81 +29,88 @@ const VerifyAccountUi = () => {
     input1.current.focus();
   }, [input1]);
   return (
-    <div className="verify-account-ui">
-      <div className="container">
-        <h1 className="title">Verify Your Account</h1>
-        <p className="para">
-          We emailed you the six digit code to cool_guy@email.com <br /> Enter
-          the code below to confirm your email address.
-        </p>
-        <div className="code-container">
-          <input
-            type="number"
-            className="code"
-            placeholder="0"
-            min="0"
-            max="9"
-            onKeyDown={(e) => handleKeyDown(e, 1)}
-            required
-            ref={input1}
-          />
-          <input
-            type="number"
-            className="code"
-            placeholder="0"
-            min="0"
-            max="9"
-            onKeyDown={(e) => handleKeyDown(e, 2)}
-            required
-            ref={input2}
-          />
-          <input
-            type="number"
-            className="code"
-            placeholder="0"
-            min="0"
-            max="9"
-            onKeyDown={(e) => handleKeyDown(e, 3)}
-            required
-            ref={input3}
-          />
-          <input
-            type="number"
-            className="code"
-            placeholder="0"
-            min="0"
-            max="9"
-            onKeyDown={(e) => handleKeyDown(e, 4)}
-            required
-            ref={input4}
-          />
-          <input
-            type="number"
-            className="code"
-            placeholder="0"
-            min="0"
-            max="9"
-            onKeyDown={(e) => handleKeyDown(e, 5)}
-            required
-            ref={input5}
-          />
-          <input
-            type="number"
-            className="code"
-            placeholder="0"
-            min="0"
-            max="9"
-            onKeyDown={(e) => handleKeyDown(e, 6)}
-            required
-            ref={input6}
-          />
+    <>
+      <div className="verify-account-ui">
+        <div className="container">
+          <h1 className="title">Verify Your Account</h1>
+          <p className="para">
+            We emailed you the six digit code to cool_guy@email.com <br /> Enter
+            the code below to confirm your email address.
+          </p>
+          <div className="code-container">
+            <input
+              type="number"
+              className="code"
+              placeholder="0"
+              min="0"
+              max="9"
+              onKeyDown={(e) => handleKeyDown(e, 1)}
+              required
+              ref={input1}
+            />
+            <input
+              type="number"
+              className="code"
+              placeholder="0"
+              min="0"
+              max="9"
+              onKeyDown={(e) => handleKeyDown(e, 2)}
+              required
+              ref={input2}
+            />
+            <input
+              type="number"
+              className="code"
+              placeholder="0"
+              min="0"
+              max="9"
+              onKeyDown={(e) => handleKeyDown(e, 3)}
+              required
+              ref={input3}
+            />
+            <input
+              type="number"
+              className="code"
+              placeholder="0"
+              min="0"
+              max="9"
+              onKeyDown={(e) => handleKeyDown(e, 4)}
+              required
+              ref={input4}
+            />
+            <input
+              type="number"
+              className="code"
+              placeholder="0"
+              min="0"
+              max="9"
+              onKeyDown={(e) => handleKeyDown(e, 5)}
+              required
+              ref={input5}
+            />
+            <input
+              type="number"
+              className="code"
+              placeholder="0"
+              min="0"
+              max="9"
+              onKeyDown={(e) => handleKeyDown(e, 6)}
+              required
+              ref={input6}
+            />
+          </div>
+          <small className="info">
+            This is design only. We didn't actually send you an email as we
+            don't have your email, right?
+          </small>
         </div>
-        <small className="info">
-          This is design only. We didn't actually send you an email as we don't
-          have your email, right?
-        </small>
       </div>
-    </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
+    </>
   );
 };
 

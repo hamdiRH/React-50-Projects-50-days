@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-
+import { Link } from "react-router-dom";
 const DoubleVerticalSlider = () => {
   const container = useRef();
   const [activeSlideIndex, setactiveSlideIndex] = useState(0);
@@ -99,6 +99,11 @@ const DoubleVerticalSlider = () => {
           </button>
         </div>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };

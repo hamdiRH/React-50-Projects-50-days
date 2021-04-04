@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import {Link} from 'react-router-dom'
 const ThemeClock = () => {
   const days = [
     "Sunday",
@@ -107,6 +107,11 @@ const ThemeClock = () => {
           dangerouslySetInnerHTML={{ __html: dateEl }}
         ></div>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };

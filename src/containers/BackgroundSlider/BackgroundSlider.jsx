@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const BackgroundSlider = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -37,7 +37,6 @@ const BackgroundSlider = () => {
           ></div>
         ))}
 
-
         <button className="arrow left-arrow" id="left" onClick={handleLefttBtn}>
           <i className="fas fa-arrow-left"></i>
         </button>
@@ -50,6 +49,11 @@ const BackgroundSlider = () => {
           <i className="fas fa-arrow-right"></i>
         </button>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };

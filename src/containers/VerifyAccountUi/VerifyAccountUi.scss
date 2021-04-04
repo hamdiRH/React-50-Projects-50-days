@@ -1,12 +1,4 @@
 .verify-account-ui {
-  * {
-    all: initial;
-    * {
-      all: unset;
-    }
-    box-sizing: border-box;
-  }
-
   background-color: #fbfcfe;
   font-family: "Muli", sans-serif;
   display: flex;
@@ -16,6 +8,14 @@
   overflow: hidden;
   margin: 0;
   position: relative;
+
+  * {
+    all: initial;
+    * {
+      all: unset;
+    }
+    box-sizing: border-box;
+  }
 
   .title {
     color: #333;
