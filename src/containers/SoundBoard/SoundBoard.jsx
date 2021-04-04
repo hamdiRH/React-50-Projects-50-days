@@ -1,27 +1,39 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Applause from "./sounds/applause.mp3";
+import Boo from "./sounds/boo.mp3";
+import Gasp from "./sounds/gasp.mp3";
+import Tada from "./sounds/tada.mp3";
+import Victory from "./sounds/victory.mp3";
+import Wrong from "./sounds/wrong.mp3";
+
 const SoundBoard = () => {
-  const applause = new Audio("../../assets/sounds/applause.mp3");
-  const boo = new Audio("../../assets/sounds/boo.mp3");
-  const gasp = new Audio("../../assets/sounds/gasp.mp3");
-  const tada = new Audio("../../assets/sounds/tada.mp3");
-  const victory = new Audio("../../assets/sounds/victory.mp3");
-  const wrong = new Audio("../../assets/sounds/wrong.mp3");
+  const applause = new Audio(Applause);
+  const boo = new Audio(Boo);
+  const gasp = new Audio(Gasp);
+  const tada = new Audio(Tada);
+  const victory = new Audio(Victory);
+  const wrong = new Audio(Wrong);
+
   const stop = () => {
-    applause.stop();
-    boo.stop();
-    gasp.stop();
-    tada.stop();
-    victory.stop();
-    wrong.stop();
+    console.log(applause);
+    applause.pause();
+    boo.pause();
+    gasp.pause();
+    tada.pause();
+    victory.pause();
+    wrong.pause();
+
+    applause.currentTime = 0;
+    boo.currentTime = 0;
+    gasp.currentTime = 0;
+    tada.currentTime = 0;
+    victory.currentTime = 0;
+    wrong.currentTime = 0;
   };
+
   return (
     <div className="sound-board">
-      <audio id="applause" src="../assets/sounds/applause.mp3"></audio>
-      <audio id="boo" src="../assets/sounds/boo.mp3"></audio>
-      <audio id="gasp" src="../assets/sounds/gasp.mp3"></audio>
-      <audio id="tada" src="../assets/sounds/tada.mp3"></audio>
-      <audio id="victory" src="../assets/sounds/victory.mp3"></audio>
-      <audio id="wrong" src="../assets/sounds/wrong.mp3"></audio>
-
       <div id="buttons">
         <button
           className="btn"
@@ -78,6 +90,11 @@ const SoundBoard = () => {
           wrong
         </button>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };
