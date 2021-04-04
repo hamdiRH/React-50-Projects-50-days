@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-
+import { Link } from "react-router-dom";
 const IncrementingCounter = () => {
   const [counter1, setcounter1] = useState(1);
   const [counter2, setcounter2] = useState(1);
@@ -45,6 +45,11 @@ const IncrementingCounter = () => {
         </div>
         <span>Facebook Fans</span>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };
