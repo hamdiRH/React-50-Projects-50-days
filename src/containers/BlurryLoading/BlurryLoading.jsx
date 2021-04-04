@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import {Link} from 'react-router-dom'
 const BlurryLoading = () => {
   const [load, setload] = useState(0);
 
@@ -20,9 +20,17 @@ const BlurryLoading = () => {
         className="bg"
         style={{ filter: `blur(${scale(load, 0, 100, 30, 0)}px)` }}
       ></section>
-      <div className="loading-text" style={{ opacity: scale(load, 0, 100, 1, 0) }}>
+      <div
+        className="loading-text"
+        style={{ opacity: scale(load, 0, 100, 1, 0) }}
+      >
         {load}%
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };

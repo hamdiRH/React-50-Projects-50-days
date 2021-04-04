@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from 'react-router-dom'
 const FormWave = () => {
   return (
     <div className="form-wave">
@@ -34,6 +34,11 @@ const FormWave = () => {
           </p>
         </form>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };

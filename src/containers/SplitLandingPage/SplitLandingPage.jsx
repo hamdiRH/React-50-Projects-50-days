@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 const SplitLandingPage = () => {
-  const [classList, setclassList] = useState("container");
-  const left = () => setclassList("container hover-left");
-  const right = () => setclassList("container hover-right");
+  const [classList, setclassList] = useState("container-split");
+  const left = () => setclassList("container-split hover-left");
+  const right = () => setclassList("container-split hover-right");
   return (
     <div className="split-landing-page">
       <div className={classList}>
@@ -20,6 +20,11 @@ const SplitLandingPage = () => {
           </Link>
         </div>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };

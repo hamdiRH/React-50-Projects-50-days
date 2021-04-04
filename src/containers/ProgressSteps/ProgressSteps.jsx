@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const ProgressSteps = () => {
   const [classList, setclassList] = useState(1);
   return (
@@ -9,7 +9,7 @@ const ProgressSteps = () => {
           <div
             className="progress"
             id="progress"
-            style={{ width: (classList-1)/3*100+'%' }}
+            style={{ width: ((classList - 1) / 3) * 100 + "%" }}
           ></div>
           <div className={classList >= 1 ? "circle active" : "circle"}>1</div>
           <div className={classList >= 2 ? "circle active" : "circle"}>2</div>
@@ -38,6 +38,11 @@ const ProgressSteps = () => {
           Next
         </button>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };

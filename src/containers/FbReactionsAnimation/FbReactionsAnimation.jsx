@@ -6,6 +6,7 @@ import wow from "./soaked.svg";
 import sad from "./sad.svg";
 import angry from "./angry.svg";
 import likeicon from "./likeicon.png";
+import { Link } from "react-router-dom";
 
 import ReactionIcons from "../../components/ReactionIcons";
 import Icon from "../../components/Icons";
@@ -41,6 +42,11 @@ const FbReactionsAnimation = () => {
           &nbsp;Like
         </button>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };

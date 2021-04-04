@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 const HiddenSearchWidget = () => {
   const [active, setactive] = useState(false);
   return (
@@ -18,6 +18,11 @@ const HiddenSearchWidget = () => {
           />
         </button>
       </div>
+      <Link to="/">
+        <button className="back">
+          <i class="fas fa-arrow-circle-left"></i>
+        </button>
+      </Link>
     </div>
   );
 };
