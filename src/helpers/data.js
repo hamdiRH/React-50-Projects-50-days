@@ -95,5 +95,11 @@ export const data = [
     name: "DoubleVerticalSlider",
     folder: "DoubleVerticalSlider",
   },
+  {
+    img: "28-github-profiles.png",
+    link: "/github-profiles",
+    name: "Github Profiles",
+    folder: "GithubProfiles",
+  },
   
 ];
