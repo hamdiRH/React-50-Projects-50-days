@@ -101,5 +101,10 @@ export const data = [
     name: "Github Profiles",
     folder: "GithubProfiles",
   },
-  
+  {
+    img: "18-quiz.png",
+    link: "/quiz",
+    name: "Quiz",
+    folder: "Quiz",
+  },
 ];
