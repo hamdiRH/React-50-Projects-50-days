@@ -107,4 +107,10 @@ export const data = [
     name: "Quiz",
     folder: "Quiz",
   },
+  {
+    img: "18-quiz.png",
+    link: "/Intro JS",
+    name: "IntroJS",
+    folder: "IntroJS",
+  },
 ];
